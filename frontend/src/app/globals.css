@@ -30,6 +30,11 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui;
 }
 
+@utility text-stroke {
+  -webkit-text-stroke: 1px var(--color-4);
+  color: transparent;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -43,4 +48,19 @@ body {
     color: var(--color-3);
     font-weight: 700;
   }
+}
+
+.grid-pattern {
+  background-image: linear-gradient(var(--color-5) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-5) 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity: 0.1;
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at center, var(--color-2) 0%, var(--color-1) 100%);
+}
+
+.glow-light {
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
 }
